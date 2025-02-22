@@ -1,39 +1,32 @@
-Circular Queue Implementation in C
+# Circular Queue Implementation in C
 
-This repository contains an implementation of a Circular Queue in C, which provides efficient enqueue and dequeue operations using an array-based circular buffer.
+This repository contains an implementation of a **Circular Queue** in C, which provides efficient enqueue and dequeue operations using an array-based circular buffer.
 
-Features
+## Features
+- Dynamic memory allocation for the queue
+- Supports enqueue and dequeue operations
+- Handles overflow and underflow conditions
+- Implements a circular buffer to efficiently use memory
+- Peek function to check the front element
+- Display function to print the queue contents
+- Proper memory management with a cleanup function
 
-Dynamic memory allocation for the queue
+## Usage
 
-Supports enqueue and dequeue operations
-
-Handles overflow and underflow conditions
-
-Implements a circular buffer to efficiently use memory
-
-Peek function to check the front element
-
-Display function to print the queue contents
-
-Proper memory management with a cleanup function
-
-Usage
-
-Compilation
-
+### Compilation
 To compile the program, use:
-
+```sh
 gcc circular_queue.c -o circular_queue
+```
 
-Running the Program
-
+### Running the Program
 Execute the compiled program:
-
+```sh
 ./circular_queue
+```
 
-Example Output
-
+### Example Output
+```
 Enqueued: 10
 Enqueued: 20
 Enqueued: 30
@@ -61,38 +54,30 @@ Queue:
 50
 60
 70
+```
 
-Functions
-
-queue* create_queue(int capacity);
-
+## Functions
+### `queue* create_queue(int capacity);`
 Creates a circular queue with the given capacity.
 
-void enqueue(queue* q, int data);
-
+### `void enqueue(queue* q, int data);`
 Adds an element to the queue if it is not full.
 
-int dequeue(queue* q);
-
+### `int dequeue(queue* q);`
 Removes an element from the queue if it is not empty.
 
-int peek(queue* q);
-
+### `int peek(queue* q);`
 Returns the front element without removing it.
 
-void display(queue* q);
-
+### `void display(queue* q);`
 Displays the elements in the queue.
 
-void free_queue(queue** q);
-
+### `void free_queue(queue** q);`
 Frees allocated memory and resets the queue.
 
-Contributing
-
+## Contributing
 Feel free to fork this repository, improve the code, and submit a pull request!
 
-License
-
+## License
 This project is open-source and available under the MIT License.
 
