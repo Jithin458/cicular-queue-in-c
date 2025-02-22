@@ -2,6 +2,9 @@
 
 This repository contains an implementation of a **Circular Queue** in C, which provides efficient enqueue and dequeue operations using an array-based circular buffer.
 
+## Purpose
+This project was created for **learning purposes** to understand circular queue implementation, memory management, and basic data structures in C.
+
 ## Features
 - Dynamic memory allocation for the queue
 - Supports enqueue and dequeue operations
